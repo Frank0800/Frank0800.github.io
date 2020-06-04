@@ -1,9 +1,8 @@
 # 前端程式設計作業三|架設個人履歷網站
 
-# 網址：http://github.com/Frank0800.github.io
+### 網址：_http://github.com/Frank0800.github.io_
 
-### _template sourse code_
-https://bootstrapmade.com/personal-free-resume-bootstrap-template/
+### template sourse code：_https://bootstrapmade.com/personal-free-resume-bootstrap-template/_
 
 >使用這個模板是套用自Bootstrapmade，其實我原本是用另一個，不過這個的設計我覺得更美觀。
 >主要是針對圖片與文字內容做修改，不過他原本給的互動套件蠻多的，只是我覺得太多用不到，所以稍微做了些刪減或及註解掉了。
