@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v4.0.1">
+  <title>FFMI Analyst</title>
+  <!-- <link href="assets/brand/ffml_logo.png" rel="icon"> -->
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/floating-labels/">
+
+  <!-- Bootstrap core CSS -->
+  <link href="../assets/dist/css/bootstrap.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="floating-labels.css" rel="stylesheet">
+</head>
+
+<body>
+  <form class="form-signin" style="background-color: rgba(255, 255, 255, 0.315);padding: 30px;">
+    <div class="text-center mb-4" style="padding-top: 15px;">
+      <img class="mb-4" src="../assets/brand/ffml_logo.png" alt="" width="72" height="72">
+      <h1 class="h3 mb-3 font-weight-normal" style="color: ivory;"><strong>Calculating Your FFMI</strong></h1>
+      <p style="color: ivory;"><strong>FFMI</strong> (Fat Free Mass Index)<br> An alternative to body mass index which
+        accounts for a
+        person's muscle
+        mass.</P>
+      <!-- <p style="text-align: left;">The average male scores about 19 and it is hard to score above 25 without using
+        steroids or other banned
+        substances.</p> -->
+    </div>
+
+    <div class="form-label-group">
+      <input type="number" id="inputHeight" class="form-control" placeholder="Height" value='175' required autofocus>
+      <label for="inputEmail">Height in centimeter</label>
+    </div>
+
+    <div class="form-label-group">
+      <input type="number" id="inputWeight" class="form-control" placeholder="Weight" value='65' required>
+      <label for="inputPassword">Weight in kilogram</label>
+    </div>
+
+    <div class="form-label-group">
+      <input type="number" id="inputFat" class="form-control" placeholder="Body Fat" value='14.2856' required>
+      <label for="inputPassword">Body Fat (out of 100%)</label>
+    </div>
+
+    <div class="radio mb-4" style="text-align: center;">
+      <label style="font-size: large;">
+        <input type="radio" name="gender" value="Male" require=required>Male
+        <input type="radio" name="gender" value="Female"> Female
+      </label>
+    </div>
+
+
+    <button class="btn btn-lg btn-primary btn-block" type="button">Go</button>
+
+
+    <section id="Result" style="padding-top: 50px; display: none;">
+      <div class="text-center mb-4" style="padding: 50px;">
+        <h1 style="color: ivory;"><strong><u>Result</u></strong></h1>
+        <p style="margin: 0px;">This is your Personal FFMI, </p>
+        <div class="form-label-group" style="text-align: center;">
+          <label for="outputFFMI"></label>
+          <input style='text-align: center; padding: 10px;' type="number" readonly class="form-control-plaintext"
+            id="outputFFMI" placeholder="Your FFMI">
+        </div>
+      </div>
+
+      <canvas id="myChart"></canvas>
+      <canvas id='myChart_1'></canvas>
+    </section>
+
+    <div>
+      <p class="mt-5 mb-3 text-muted text-center" style="opacity: 50%;">&copy; Lin</p>
+    </div>
+
+  </form>
+
+  <!-- 引用JQuery, Chart.js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <!-- 引用自己寫的 js -->
+  <script src="./ffmi.js"></script>
+</body>
+
+</html>
