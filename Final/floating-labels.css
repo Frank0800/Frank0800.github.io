@@ -8,7 +8,7 @@ body {
   display: flex;
   -ms-flex-align: center;
   align-items: center;
-  background: url("../assets/brand/bg_workout.jpeg") center fixed no-repeat;
+  background: url("./assets/brand/bg_workout.jpeg") center fixed no-repeat;
   background-size: cover;
 }
 
